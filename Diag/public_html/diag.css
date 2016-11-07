@@ -1,0 +1,107 @@
+body {
+    font-size: 12px; 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+.question_header { 
+    color: #333;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 0px;
+    text-transform: uppercase;
+    margin: 30px auto 30px auto;
+    width: 100%; 
+    display: block; 
+}
+
+.question_main { 
+    height: auto; 
+    color: #727272;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%; 
+    padding: 0;  
+    margin: 0px auto 20px auto; 
+    display: block;  
+}
+
+.question_options { 
+    height: auto; 
+    color: #727272;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%; 
+    padding: 0; 
+    margin: 0px auto 10px auto; 
+    display: block; 
+}
+
+.question_Submit { 
+    height: auto; 
+    color: #0D71B7;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%; 
+    padding: 0; 
+    margin: 0px auto 0px auto; 
+    display: block; 
+}
+
+.linkButton { 
+    cursor: pointer; 
+}
+
+.result_header { 
+    height: auto; 
+    width: 100%; 
+    padding: 0; 
+    margin: 0px auto 0px auto; 
+    display: block; 
+}
+
+.result_description { 
+    height: auto; 
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    width: 100%; 
+    padding: 0;  
+    margin: 30px auto 30px auto;
+    display: block;  
+}
+
+.result {
+    height: auto; 
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    width: 100%; 
+    padding: 0;  
+    margin: 30px auto 30px auto;
+    display: block;  
+}
+
+.result.malo {  
+    color: red;
+}
+
+.result.aceptable {
+    color: orange;
+}
+
+.result.excelente {
+    color: green;
+}
+
+.submitform {
+    color: #000000;
+}
+
+.noanswer_selected {
+    color: red;
+}
+
+#containerinframe {
+    display: table;
+    margin: 0 auto;
+}

@@ -1,0 +1,456 @@
+{
+    "preguntas":
+            [
+                {
+                    "id": "0",
+                    "section": "Diagnóstico de Contabilidad",
+                    "question": "¿Tu contador te proporciona tu declaración mensual o acuse todos los meses?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "section": "Diagnóstico de Contabilidad",
+                    "question": "¿Tu contador toma iniciativa para asesorarte en cuanto a deducciones y obligaciones fiscales?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "section": "Diagnóstico de Contabilidad",
+                    "question": "¿Tu contador te proporciona un reporte mensual de tu contabilidad?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "section": "Diagnóstico de Contabilidad",
+                    "question": "¿Tu contador te mantiene actualizado de las actualizaciones del SAT?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "4",
+                    "section": "Diagnóstico de Contabilidad",
+                    "question": "¿Haces una factura al público en general para empatar ingresos reales con los declarados?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "5",
+                    "section": "Diagnóstico de Facturación",
+                    "question": "¿Tu sistema de facturación actual cuenta con recepción de facturas de gastos?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "6",
+                    "section": "Diagnóstico de Facturación",
+                    "question": "¿Tu sistema de facturación cuenta con Descarga Automática del SAT?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "7",
+                    "section": "Diagnóstico de Facturación",
+                    "question": "¿Tu sistema de facturación te proporciona estadísticas de gastos e ingresos en tiempo real?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "8",
+                    "section": "Diagnóstico de Servicio de Cobranza",
+                    "question": "¿Cuentas con alguna empresa o persona que te ayude a cobrar tus facturas de seguros?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "9",
+                    "section": "Diagnóstico de Servicio de Cobranza",
+                    "question": "¿Tu servicio actual se encarga de todo el proceso (desde ir por el tabulador hasta el depósito del pago)?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "10",
+                    "section": "Diagnóstico de Servicio de Cobranza",
+                    "question": "¿Tu servicio actual te cobra por evento o por porcentaje?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Por evento"
+                        },
+                        {
+                            "val": "0",
+                            "text": "Por Porcentaje"
+                        }
+                    ]
+                },
+                {
+                    "id": "11",
+                    "section": "Diagnóstico de Recursos Humanos",
+                    "question": "¿Actualmente estás pagando a algún personal de apoyo (asistente, enfermera, etc.)?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "12",
+                    "section": "Diagnóstico de Recursos Humanos",
+                    "question": "¿Tienes una relación laboral formal con tu personal de apoyo (nómina, IMSS, prestaciones, etc.)?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "13",
+                    "section": "Diagnóstico de Recursos Humanos",
+                    "question": "¿Tu eres el patrón o es un servicio subcontratado?",
+                    "possible_answer": [
+                        {
+                            "val": "0",
+                            "text": "Patrón"
+                        },
+                        {
+                            "val": "1",
+                            "text": "Subcontratado"
+                        }
+                    ]
+                },
+                {
+                    "id": "14",
+                    "section": "Diagnóstico de Recursos Humanos",
+                    "question": "¿Alguien te apoya con la capacitación de tu personal?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "15",
+                    "section": "Diagnóstico de Expediente Clínico",
+                    "question": "¿Cuentas con un Expediente Clínico Electrónico?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "16",
+                    "section": "Diagnóstico de Expediente Clínico",
+                    "question": "¿Tu Expediente Clínico Electrónico cumple con la Norma Oficial Mexicana?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No sé"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "17",
+                    "section": "Diagnóstico de Expediente Clínico",
+                    "question": "¿Tu Expediente Clínico Electrónico está respaldado en la Nube?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "18",
+                    "section": "Diagnóstico de Expediente Clínico",
+                    "question": "¿Tu Expediente Clínico Electrónico es personalizable dependiendo de la especialidad?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                },
+                {
+                    "id": "19",
+                    "section": "Por Último",
+                    "question": "¿Te proporcionan comprobante fiscal deducible de impuestos de todos estos servicios?",
+                    "possible_answer": [
+                        {
+                            "val": "1",
+                            "text": "Sí"
+                        },
+                        {
+                            "val": "0",
+                            "text": "No"
+                        }
+                    ]
+                }
+            ],
+    "resultados":
+            {
+                "Contabilidad":
+                        {
+                            "Excelente":
+                                    {
+                                        "min": "5",
+                                        "max": "5",
+                                        "header": "Tu resultado del Diagnóstico de Contabilidad: Excelente.",
+                                        "description": "Retroalimentación<ul><li>Es muy importante que te proporcione tus declaraciones y/o acuses todos los meses para asegurarte que se están presentando en tiempo y forma.</li><li>Un buen servicio de contabilidad siempre incluye asesoría para asegurarse que estás cumpliendo con tus obligaciones y deduciendo todos tus gastos.</li><li>Los reportes mensuales te mantienen actualizado con tu información contable para poder tomar decisiones.</li><li>Es importante realizar una factura global para evitar discrepancias con los estados de cuenta y los ingresos declarados, esto evita riesgos con el SAT.</li></ul>"
+                                    },
+                            "Bueno":
+                                    {
+                                        "min": "3",
+                                        "max": "4",
+                                        "header": "Tu resultado del Diagnóstico de Contabilidad: Aceptable.",
+                                        "description": "Retroalimentación<ul><li>Es muy importante que te proporcione tus declaraciones y/o acuses todos los meses para asegurarte que se están presentando en tiempo y forma.</li><li>Un buen servicio de contabilidad siempre incluye asesoría para asegurarse que estás cumpliendo con tus obligaciones y deduciendo todos tus gastos.</li><li>Los reportes mensuales te mantienen actualizado con tu información contable para poder tomar decisiones.</li><li>Es importante realizar una factura global para evitar discrepancias con los estados de cuenta y los ingresos declarados, esto evita riesgos con el SAT.</li></ul>"
+                                    },
+                            "Malo":
+                                    {
+                                        "min": "0",
+                                        "max": "2",
+                                        "header": "Tu resultado del Diagnóstico de Contabilidad: Malo.",
+                                        "description": "Retroalimentación<ul><li>Es muy importante que te proporcione tus declaraciones y/o acuses todos los meses para asegurarte que se están presentando en tiempo y forma.</li><li>Un buen servicio de contabilidad siempre incluye asesoría para asegurarse que estás cumpliendo con tus obligaciones y deduciendo todos tus gastos.</li><li>Los reportes mensuales te mantienen actualizado con tu información contable para poder tomar decisiones.</li><li>Es importante realizar una factura global para evitar discrepancias con los estados de cuenta y los ingresos declarados, esto evita riesgos con el SAT.</li></ul>"
+                                    }
+                        },
+                "Facturacion":
+                        {
+                            "Excelente":
+                                    {
+                                        "min": "3",
+                                        "max": "3",
+                                        "header": "Tu resultado del Diagnóstico de Facturación: Excelente",
+                                        "description": "Retroalimentación<ul><li>El sistema de recepción de facturas te permite proporcionar automáticamente las facturas a tu contador, ahorrándote el trabajo de juntar las facturas al final de cada periodo.</li><li>La Descarga del SAT te permite obtener facturas de gastos que normalmente no se proporcionan, cómo las facturas por los intereses y comisiones bancarias.</li><li>Las estadísticas de gastos e ingresos en tiempo real te permite tomar decisiones antes de que termine cada periodo.</li></ul>"
+                                    },
+                            "Bueno":
+                                    {
+                                        "min": "2",
+                                        "max": "2",
+                                        "header": "Tu resultado del Diagnóstico de Facturación: Aceptable.",
+                                        "description": "Retroalimentación<ul><li>El sistema de recepción de facturas te permite proporcionar automáticamente las facturas a tu contador, ahorrándote el trabajo de juntar las facturas al final de cada periodo.</li><li>La Descarga del SAT te permite obtener facturas de gastos que normalmente no se proporcionan, cómo las facturas por los intereses y comisiones bancarias.</li><li>Las estadísticas de gastos e ingresos en tiempo real te permite tomar decisiones antes de que termine cada periodo.</li></ul>"
+                                    },
+                            "Malo":
+                                    {
+                                        "min": "0",
+                                        "max": "1",
+                                        "header": "Tu resultado del Diagnóstico de Facturación: Malo.",
+                                        "description": "Retroalimentación<ul><li>El sistema de recepción de facturas te permite proporcionar automáticamente las facturas a tu contador, ahorrándote el trabajo de juntar las facturas al final de cada periodo.</li><li>La Descarga del SAT te permite obtener facturas de gastos que normalmente no se proporcionan, cómo las facturas por los intereses y comisiones bancarias.</li><li>Las estadísticas de gastos e ingresos en tiempo real te permite tomar decisiones antes de que termine cada periodo.</li></ul>"
+                                    }
+                        },
+                "Cobranza":
+                        {
+                            "Excelente":
+                                    {
+                                        "min": "3",
+                                        "max": "3",
+                                        "header": "Tu resultado del Diagnóstico de Servicio de Cobranza: Excelente.",
+                                        "description": "Retroalimentación<ul><li>Un buen servicio de cobranza te permite liberar tiempo que puedes invertir en tu consulta, familia o cualquier otra actividad.</li><li>Idealmente un servicio de cobranza debe de encargarse de todo el proceso.</li><li>El trabajo para cobrar cualquier factura es virtualmente el mismo. No deberías de pagar más dependiendo de la cantidad.</li></ul>"
+                                    },
+                            "Bueno":
+                                    {
+                                        "min": "2",
+                                        "max": "2",
+                                        "header": "Tu resultado del Diagnóstico de Servicio de Cobranza: Aceptable.",
+                                        "description": "Retroalimentación<ul><li>Un buen servicio de cobranza te permite liberar tiempo que puedes invertir en tu consulta, familia o cualquier otra actividad.</li><li>Idealmente un servicio de cobranza debe de encargarse de todo el proceso.</li><li>El trabajo para cobrar cualquier factura es virtualmente el mismo. No deberías de pagar más dependiendo de la cantidad.</li></ul>"
+                                    },
+                            "Malo":
+                                    {
+                                        "min": "0",
+                                        "max": "1",
+                                        "header": "Tu resultado del Diagnóstico de Servicio de Cobranza: Malo.",
+                                        "description": "Retroalimentación<ul><li>Un buen servicio de cobranza te permite liberar tiempo que puedes invertir en tu consulta, familia o cualquier otra actividad.</li><li>Idealmente un servicio de cobranza debe de encargarse de todo el proceso.</li><li>El trabajo para cobrar cualquier factura es virtualmente el mismo. No deberías de pagar más dependiendo de la cantidad.</li></ul>"
+                                    }
+                        },
+                "RH":
+                        {
+                            "Excelente":
+                                    {
+                                        "min": "4",
+                                        "max": "4",
+                                        "header": "Tu resultado del Diagnóstico de Recursos Humanos: Excelente.",
+                                        "description": "Retroalimentación<ul><li>De acuerdo a la ley, todo empleado que trabaje en un lugar y horario fijo debe de estar contratado formalmente a través de nómina.</li><li>Si tu eres el patrón del personal de apoyo te encuentras obligado al reparto de utilidades, capacitación, pago puntual de nómina, y otras responsabilidades ante la ley.</li></ul>"
+                                    },
+                            "Bueno":
+                                    {
+                                        "min": "2",
+                                        "max": "3",
+                                        "header": "Tu resultado del Diagnóstico de Recursos Humanos: Aceptable.",
+                                        "description": "Retroalimentación<ul><li>De acuerdo a la ley, todo empleado que trabaje en un lugar y horario fijo debe de estar contratado formalmente a través de nómina.</li><li>Si tu eres el patrón del personal de apoyo te encuentras obligado al reparto de utilidades, capacitación, pago puntual de nómina, y otras responsabilidades ante la ley.</li></ul>"
+                                    },
+                            "Malo":
+                                    {
+                                        "min": "0",
+                                        "max": "1",
+                                        "header": "Tu resultado del Diagnóstico de Recursos Humanos: Malo.",
+                                        "description": "Retroalimentación<ul><li>De acuerdo a la ley, todo empleado que trabaje en un lugar y horario fijo debe de estar contratado formalmente a través de nómina.</li><li>Si tu eres el patrón del personal de apoyo te encuentras obligado al reparto de utilidades, capacitación, pago puntual de nómina, y otras responsabilidades ante la ley.</li></ul>"
+                                    }
+                        },
+                "Clinico":
+                        {
+                            "Excelente":
+                                    {
+                                        "min": "4",
+                                        "max": "4",
+                                        "header": "Tu resultado del Diagnóstico de Expediente Clínico: Excelente.",
+                                        "description": "Retroalimentación<ul><li>Un Expediente Clínico Electrónico te permite tener toda la información relevante a la mano, además de ahorrar el uso de papel.</li><li>El expediente clínico es un documento legal, y es importante asegurarse que cumpla con las regulaciones vigentes.</li><li>El expediente en la Nube te permite respaldar tu información, y poder tener acceso a través de diferentes dispositivos y lugares.</li></ul>"
+                                    },
+                            "Bueno":
+                                    {
+                                        "min": "2",
+                                        "max": "3",
+                                        "header": "Tu resultado del Diagnóstico de Expediente Clínico: Aceptable.",
+                                        "description": "Retroalimentación<ul><li>Un Expediente Clínico Electrónico te permite tener toda la información relevante a la mano, además de ahorrar el uso de papel.</li><li>El expediente clínico es un documento legal, y es importante asegurarse que cumpla con las regulaciones vigentes.</li><li>El expediente en la Nube te permite respaldar tu información, y poder tener acceso a través de diferentes dispositivos y lugares.</li></ul>"
+                                    },
+                            "Malo":
+                                    {
+                                        "min": "0",
+                                        "max": "1",
+                                        "header": "Tu resultado del Diagnóstico de Expediente Clínico: Malo.",
+                                        "description": "Retroalimentación<ul><li>Un Expediente Clínico Electrónico te permite tener toda la información relevante a la mano, además de ahorrar el uso de papel.</li><li>El expediente clínico es un documento legal, y es importante asegurarse que cumpla con las regulaciones vigentes.</li><li>El expediente en la Nube te permite respaldar tu información, y poder tener acceso a través de diferentes dispositivos y lugares.</li></ul>"
+                                    }
+                        },
+                "Final":
+                        {
+                            "Excelente":
+                                    {
+                                        "min": "0",
+                                        "max": "0",
+                                        "header": "Tu resultado del Diagnóstico Administrativo: Excelente.",
+                                        "description": "Retroalimentación<ul><li>¡Felicidades! Has hecho un buen trabajo al escoger los servicios para tu consulta.</li><li>Si deseas tener una integración de tus servicios y contar con un aliado que te ayude a crecer y liberar tiempo, no dudes en contactarnos.</li></ul>"
+                                    },
+                            "Bueno":
+                                    {
+                                        "min": "0",
+                                        "max": "0",
+                                        "header": "Tu resultado del Diagnóstico Administrativo: Aceptable.",
+                                        "description": "Retroalimentación<ul><li>Hemos detectado varias áreas de mejora en la administración de tu consultorio.</li><li>Si estás buscando un aliado que te ayude a mejorar la administración y crecer tu consulta, no dudes en contactarnos.</li></ul>"
+                                    },
+                            "Malo":
+                                    {
+                                        "min": "0",
+                                        "max": "0",
+                                        "header": "Tu resultado del Diagnóstico Administrativo: Malo.",
+                                        "description": "Retroalimentación<ul><li>Hemos detectado varias áreas de riesgo en la administración de tu consultorio que requieren atención.</li><li>Si estás buscando un aliado que te ayude a mejorar la administración y crecer tu consulta, no dudes en contactarnos.</li></ul>"
+                                    }
+                        }
+            }
+}
