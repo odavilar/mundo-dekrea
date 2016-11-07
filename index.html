@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculador de línea</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="calculador.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="jquery.formatCurrency-1.4.0.min.js"></script>
+        <script>
+            function calcMontoMaximoAPrestar() {
+                var montomax = 0;
+                var deducciones = $("#deducciones").asNumber();
+                var numpagos = $("#numerodepagos option:selected").text();
+                var numpagosval = $("#numerodepagos option:selected").val();
+                var salario = $("#salario").asNumber();
+                var multiplier = 0;
+                var factor = [1.193, 1.246, 1.298, 1.350, 1.428, 1.508];
+
+                if (deducciones == '')
+                {
+                    deducciones = 0;
+                    $("#deducciones").val(deducciones);
+                    $("#deducciones").formatCurrency({colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: 2});
+                }
+
+                if ($("#frecuencia").val() == 0)
+                {
+                    multiplier = 30.4;
+                } else if ($("#frecuencia").val() == 1)
+                {
+                    multiplier = 15.2;
+                } else if ($("#frecuencia").val() == 2)
+                {
+                    multiplier = 7;
+                }
+
+                montomax = numpagos * ((0.3 * (salario - (40.3 * multiplier))) - deducciones) / factor[numpagosval];
+
+                return montomax;
+            }
+
+            function calcMontodelPagoMaximo(montomax)
+            {
+                var numpagos = $("#numerodepagos option:selected").text();
+                var numpagosval = $("#numerodepagos option:selected").val();
+                var factor = [1.193, 1.246, 1.298, 1.350, 1.428, 1.508];
+                montodelpago = montomax * factor[numpagosval] / numpagos;
+                return montodelpago;
+            }
+
+            function calcular()
+            {
+                var montomaximoaprestar = 0;
+                var montodelpagomaximo = 0;
+                montomaximoaprestar = calcMontoMaximoAPrestar();
+                montodelpagomaximo = calcMontodelPagoMaximo(montomaximoaprestar);
+                $("#montomaximo").val(montomaximoaprestar.toString());
+                $("#montodelpago").val(montodelpagomaximo.toString());
+                $("#montomaximo").formatCurrency({colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: 2});
+                $("#montodelpago").formatCurrency({colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: 2});
+            }
+
+            $(document).ready(function () {
+                $('#frecuencia option:contains("Mensual")').prop('selected', true);
+                $('#numerodepagos option[value="3"]').prop('selected', true);
+                $('#numerodepagos').change(function () {
+                    calcular();
+                });
+                $("#calc").click(function () {
+                    calcular();
+                });
+                $("#frecuencia").change(
+                        function () {
+                            $("#deducfrec").text($("#frecuencia option:selected").text());
+                            if ($("#frecuencia").val() == 0)
+                            {
+                                $('#numerodepagos option[value="0"]').text("3");
+                                $('#numerodepagos option[value="1"]').text("6");
+                                $('#numerodepagos option[value="2"]').text("9");
+                                $('#numerodepagos option[value="3"]').text("12");
+                                $('#numerodepagos option[value="4"]').text("15");
+                                $('#numerodepagos option[value="5"]').text("18");
+                                $("#periodnumerodepagos").text("meses");
+                            }
+                            if ($("#frecuencia").val() == 1)
+                            {
+                                $('#numerodepagos option[value="0"]').text("6");
+                                $('#numerodepagos option[value="1"]').text("12");
+                                $('#numerodepagos option[value="2"]').text("18");
+                                $('#numerodepagos option[value="3"]').text("24");
+                                $('#numerodepagos option[value="4"]').text("30");
+                                $('#numerodepagos option[value="5"]').text("36");
+                                $("#periodnumerodepagos").text("quincenas");
+                            }
+                            if ($("#frecuencia").val() == 2)
+                            {
+                                $('#numerodepagos option[value="0"]').text("13");
+                                $('#numerodepagos option[value="1"]').text("26");
+                                $('#numerodepagos option[value="2"]').text("39");
+                                $('#numerodepagos option[value="3"]').text("52");
+                                $('#numerodepagos option[value="4"]').text("65");
+                                $('#numerodepagos option[value="5"]').text("78");
+                                $("#periodnumerodepagos").text("semanas");
+                            }
+                            calcular();
+                        });
+                $('#salario').focusin(function () {
+                    $(this).val('')
+                });
+                $('#salario').blur(function () {
+                    $(this).formatCurrency({colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: 2});
+                })
+                        .keyup(function (e) {
+                            var e = window.event || e;
+                            var keyUnicode = e.charCode || e.keyCode;
+                            if (e !== undefined) {
+                                switch (keyUnicode) {
+                                    case 16:
+                                        break; // Shift
+                                    case 17:
+                                        break; // Ctrl
+                                    case 18:
+                                        break; // Alt
+                                    case 27:
+                                        this.value = '';
+                                        break; // Esc: clear entry
+                                    case 35:
+                                        break; // End
+                                    case 36:
+                                        break; // Home
+                                    case 37:
+                                        break; // cursor left
+                                    case 38:
+                                        break; // cursor up
+                                    case 39:
+                                        break; // cursor right
+                                    case 40:
+                                        break; // cursor down
+                                    case 78:
+                                        break; // N (Opera 9.63+ maps the "." from the number key section to the "N" key too!) (See: http://unixpapa.com/js/key.html search for ". Del")
+                                    case 110:
+                                        break; // . number block (Opera 9.63+ maps the "." from the number block to the "N" key (78) !!!)
+                                    case 190:
+                                        break; // .
+                                    default:
+                                        $(this).formatCurrency({colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: -1, eventOnDecimalsEntered: true});
+                                }
+                            }
+                            calcular();
+                        });
+                $('#deducciones').focusin(function () {
+                    $(this).val('')
+                });
+                $('#deducciones').blur(function () {
+                    $(this).formatCurrency({colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: 2});
+                })
+                        .keyup(function (e) {
+                            var e = window.event || e;
+                            var keyUnicode = e.charCode || e.keyCode;
+                            if (e !== undefined) {
+                                switch (keyUnicode) {
+                                    case 16:
+                                        break; // Shift
+                                    case 17:
+                                        break; // Ctrl
+                                    case 18:
+                                        break; // Alt
+                                    case 27:
+                                        this.value = '';
+                                        break; // Esc: clear entry
+                                    case 35:
+                                        break; // End
+                                    case 36:
+                                        break; // Home
+                                    case 37:
+                                        break; // cursor left
+                                    case 38:
+                                        break; // cursor up
+                                    case 39:
+                                        break; // cursor right
+                                    case 40:
+                                        break; // cursor down
+                                    case 78:
+                                        break; // N (Opera 9.63+ maps the "." from the number key section to the "N" key too!) (See: http://unixpapa.com/js/key.html search for ". Del")
+                                    case 110:
+                                        break; // . number block (Opera 9.63+ maps the "." from the number block to the "N" key (78) !!!)
+                                    case 190:
+                                        break; // .
+                                    default:
+                                        $(this).formatCurrency({colorize: true, negativeFormat: '-%s%n', roundToDecimalPlace: -1, eventOnDecimalsEntered: true});
+                                }
+                            }
+                            calcular();
+                        });
+            });
+        </script>    
+    </head>
+    <body>
+
+        <form class="form-container">
+            <div class="form-title">
+                <h2>Calculador de línea</h2>
+            </div>
+            <div class="form-title">
+                <div class="txtlabel">Salario por periodo</div>
+                <input type="text" class="form-field" id="salario" name="salario" />
+            </div>
+            <div  class="form-title">
+                <div class="txtlabel">Frecuencia de pago</div>
+                <select class="select-form-field" id="frecuencia" name="frecuencia">
+                    <option value="0">Mensual</option>
+                    <option value="1">Quincenal</option>
+                    <option value="2">Semanal</option>
+                </select>
+            </div>
+            <div class="form-title">
+                <div class="txtlabel">Deducciones existentes</div>
+                <input type="text" class="form-field" id="deducciones" name="deducciones" value="" /> <div class="righttext" id="deducfrec">Mensual</div></div>
+            <div class="form-title">
+                <div class="txtlabel">Numero de pagos </div>
+                <select class="select-form-field" id="numerodepagos" name="numerodepagos">
+                    <option value="0">3</option>
+                    <option value="1">6</option>
+                    <option value="2">9</option>
+                    <option value="3">12</option>
+                    <option value="4">15</option>
+                    <option value="5">18</option>
+                </select> <div class="righttext" id="periodnumerodepagos">meses</div></div>
+        </div>
+        <div class="form-title">
+            <div class="txtlabel">Monto máximo a prestar</div>
+            <input type="text" class="form-field" id="montomaximo" name="montomaximo" value="" />
+        </div>
+        <div class="form-title last">
+            <div class="txtlabel">Monto del pago máximo</div>
+            <input type="text" class="form-field" id="montodelpago" name="montodelpago" value="" />
+        </div>
+        <!-- <span id="calc">Calcular</span> -->
+    </form>
+</body>
+</html>
